@@ -1,0 +1,22 @@
+#Casper Hedar
+#2020-08-28
+#dd1315
+g = int(input("bestäm g-värde: "))
+q = int(input("bestäm q-värde: "))
+n = int(input("bestäm n-värde: "))
+sg=g*(q**n-1)/(q-1)
+print(sg)
+a1 = int(input("bestäm a1-värde: "))
+d = int(input("bestäm d-värde: "))
+an=a1+d*(n-1)
+sa=n*(a1+an)/2
+print(sa)
+if sa > sg:
+    print ("Den aritmetiska summan är störst")
+if sg > sa:
+    print ("Den geometriska summan är störst")
+if sg == sa:
+    print ("Summorna är lika")
+
+
+
